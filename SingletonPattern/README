@@ -1,0 +1,19 @@
+/*
+    Type: Creational pattern.
+    Description: It limits the construction of objects to only one object of the class.
+    
+    SOLID principles Analysis:
+        BREAKS:
+            Single Responsibility principle because it solves two problems not only one
+            Open - Closed principle because open means inheritance and if we inherit from a singleton class we broke the pattern.
+            Dependency Inversion principle because it is not covered by an interface or an abstract class.
+        
+        SUPPORTS:
+            Liskov Substitution principle because simply no one can inherit from that class
+            Interface Segregation principle because no one is forced to implement anything from that class
+
+    Examples where you can use the Singleton Pattern:
+        Database Objects (most common example)
+        Driver Objects
+        Logging Objects
+*/
