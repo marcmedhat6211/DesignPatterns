@@ -1,0 +1,23 @@
+/*
+    Type: Creational Pattern
+    Description: produce families of related objects without specifying their concrete classes.
+
+    SOLID Principles Analysis:
+        BREAKS:
+            It does not break any principle.
+            The only problem that this pattern causes is that the code may become more complicated than it should be since a lot of new interfaces and classes are being introduced along the pattern.
+
+        SUPPORTS:
+            Single Responsibility Principle: you can extract the product creation code in one place, making the code easier to support.
+            Open - Closed Principle: you can introduce new variants of products without breaking existing code.
+            Liskov Substitution Principle: Everything implements and Inherits from the right place and they all depend on each other.
+            Interface Segregation Principle: you don't force anyone on using a method that they do not need.
+            Dependency Inversion Principle: Everything depends on Interfaces.
+
+    Examples where you can use the Abstract Factory Pattern:
+        Furniture Factory:
+            Chair, Table, and Sofa
+            and also there is Modern furniture and Classic furniture
+            which makes each Chair has the modern and the classic version
+            Same as the Table, and the Sofa.
+*/
