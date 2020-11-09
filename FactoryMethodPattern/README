@@ -1,0 +1,20 @@
+/*
+    Type: Creational Pattern.
+    Description: provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
+
+    SOLID Principles Analysis:
+        BREAKS:
+            The code may become more complicated since you need to introduce a lot of new subclasses to implement the pattern.
+            The best case scenario is when you’re introducing the pattern into an existing hierarchy of creator classes.
+
+        SUPPORTS:
+            You avoid tight coupling between the creator and the concrete products.
+            Single Responsibility Principle: You can move the product creation code into one place in the program, making the code easier to support.
+            Open/Closed Principle: You can introduce new types of products into the program without breaking existing client code.
+            Liskov Substitution Principle: ex: Sedan is a vehicle and can extend the class Vehicle.
+            Interface Segregation Principle: I don't force any of the clients to implement a method they don't want to implement.
+            Dependency Inversion Principle: This pattern depends on abstraction.
+
+    Examples where you can use the Factory Method Pattern:
+        If you have a Class Vehicle and you have many types of vehicles like Sedan, Suv, and Four by Four Vehicles. 
+*/
