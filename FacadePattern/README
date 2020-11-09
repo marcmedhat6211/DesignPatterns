@@ -1,0 +1,16 @@
+/*
+    Type: Structural Pattern.
+    Description: provides a simplified interface to a library, a framework, or any other complex set of classes.
+    
+    SOLID Principles Analysis:
+        BREAKS(Problems):
+            A facade can become a god object coupled to all classes of an application.
+            Single Responsibility Principle: a facade class does many things
+
+        SUPPORTS(Advantages):
+            You can isolate your code from the complexity of a subsystem.
+            Open/Closed Principle: It is open for Extraction but closed for modifications.
+
+        Examples Where you can use the Facade Pattern:
+            Converting a Codec file.
+*/  
