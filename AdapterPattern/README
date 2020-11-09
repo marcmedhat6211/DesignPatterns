@@ -1,0 +1,22 @@
+/*
+    Type: Structural Pattern
+    Description: allows objects with incompatible interfaces to collaborate.
+
+    SOLID Principles Analysis:
+        BREAKS:
+            It does not break any principle
+            The only problem is that the overall complexity of the code increases because you need to introduce a set of new interfaces and classes. Sometimes it’s simpler just to change the service class so that it matches the rest of your code.
+            
+        SUPPORTS:
+            Single Responsibility Principle: You can separate the interface or data conversion code from the primary business logic of the program.
+            Open - Closed Principle: You can introduce new types of adapters into the program without breaking the existing client code, as long as they work with the adapters through the client interface.
+            Liskov Substitution Principle: There are debates on this one but generally it doesn't break that principle because in our example, it inherits the radius for example that represents the width of a square.
+            Interface Segregation Principle: not forcing the user to implement anything.
+            Dependency Inversion Principle: Sometimes you use Interfaces and Abstract Classes and sometimes not, so there are debates on this one too.
+
+    Examples on when to use the Adapter pattern:
+        Imagine that you’re creating a stock market monitoring application. The application downloads the stock data from multiple sources in XML
+        format and then displays nice-looking charts and diagrams for the user.
+        At some point, you decide to improve the app by integrating a smart 3rd-party analytics library. But there’s a catch: 
+        the analytics library only works with data in JSON format.
+*/
